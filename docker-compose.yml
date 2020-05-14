@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  cert-issuer:
+    build:
+      context: .
+      dockerfile: cert-issuer.dockerfile
+    image: local/cert-issuer
+    volumes:
+      - /tmp/.X11-unix/:/tmp/.X11-unix:rw
+      - ./:/local:rw
+    environment:
+      DISPLAY: ${DISPLAY}
