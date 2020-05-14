@@ -1,0 +1,5 @@
+# Cert files created by third-parties
+/user
+*.key
+*.pfx
+.keys/

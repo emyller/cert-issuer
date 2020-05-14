@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+" codebase="https://emissor.ca.inf.br/prod" href="Emissor.jnlp">
+  <information>
+    <title>Assistente de Emissão de Certificado SOLUTI</title>
+    <vendor>Soluti Certificação Digital</vendor>
+    <homepage href="https://soluti.com.br" />
+    <description>Sistema para emissão de certificados digitais Soluti</description>
+    <description kind="short">Assistente de Emissão de Certificado SOLUTI</description>
+    <icon href="logo_soluti.png" kind="splash" />
+    <icon href="64.png" kind="default" />
+  </information>
+  <update check="always" />
+  <security>
+    <all-permissions />
+  </security>
+  <resources>
+    <j2se version="1.7+" />
+    <jar href="baixa-de-certificados.jar" main="true" />
+    <jar href="lib/bcpkix-jdk15on-150.jar" download="lazy" />
+    <jar href="lib/bcprov-jdk14-150.jar" download="lazy" />
+    <jar href="lib/commons-net-3.4.jar" download="lazy" />
+    <jar href="lib/pkcs11wrapper.jar" download="lazy" />
+    <jar href="lib/Sign-soluti-1.1.1.jar" download="lazy" />
+    <jar href="lib/commons-io-2.4.jar" download="lazy" />
+    <jar href="lib/httpclient-4.5.2.jar" download="lazy" />
+    <jar href="lib/httpcore-4.4.4.jar" download="lazy" />
+    <jar href="lib/commons-logging-1.1.1.jar" download="lazy" />
+    <jar href="lib/json-simple-1.1.1.jar" download="lazy" />
+    <property name="jnlp.linkPool" value="https://arpartner.acsoluti.com.br/" />
+    <property name="jnlp.segundoLinkPool" value="https://ardigisec.acsoluti.com.br/" />
+    <property name="jnlp.homologacao" value="false" />
+    <property name="java.net.preferIPv4Stack" value="true" />
+    <property name="jnlp.renovacao" value="false" />
+  </resources>
+  <application-desc main-class="br.com.soluti.baixadecertificados.run.InstallCertificado" />
+</jnlp>
