@@ -1,0 +1,3 @@
+#!/bin/sh
+xhost +local: > /dev/null
+docker-compose run --rm cert-issuer $@
